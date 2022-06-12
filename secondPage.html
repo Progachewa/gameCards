@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <script src ="secondPage.js"></script>
         <meta charset="UTF-8">
         <title>Main game</title>
         <link href="styleSecondPage.css" rel="stylesheet" type="text/css"/>
@@ -17,8 +16,8 @@
                 <span class="styleParameters">High Score: 800</span>
             </div>
 
-            <div class="timeContainer"><!--beliq fon-->
-                <div class="timeCounter"><div><!--lilaviq fon-otchitne na vremeto-->
+            <div class="timeContainer">
+                <div class="timeCounter"><div>
             </div>
 
             <a href="secondPage.html">
@@ -31,7 +30,7 @@
         <main>
             <div class="containerGame">
                 <div class="card">
-                   <div class="cardFaceDown" onclick="transitionCard(event)"></div>
+                   <div class="cardFaceDown"></div>
                    <div class="cardFaceUp Mars"></div>
                 </div>
                 <div class="card">
@@ -96,6 +95,19 @@
             </div>
         </main>
 
+        <script>
+
+            let cardBack = document.querySelectorAll(".cardFaceDown"),
+                cardFace = document.querySelectorAll(".cardFaceUp");
+    
+            for(let i =0; i < cardBack.length; i++){
+                cardBack[i].addEventListener("click", cardClicked);
+                function cardClicked(){
+                        cardBack[i].classList.add("rotateCardBack");
+                        cardFace[i].classList.add("rotateCardFace");
+                }   
+            }
+        </script>
     </body>
 
 </html>

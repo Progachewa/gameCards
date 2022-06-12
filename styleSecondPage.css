@@ -126,6 +126,7 @@ body {
   margin-top: 25px;
   margin-left: 30px;
   padding-left: 10px;
+  cursor: pointer;
 }
 .cardFaceDown {
   position: absolute;
@@ -139,11 +140,11 @@ body {
   height: 100%;
   transform: rotateY(90deg);
 }
-.card:hover .cardFaceDown {
+.rotateCardBack {
   transform: rotateY(90deg);
   transition: transform 1s ease-in;
 }
-.card:hover .cardFaceUp {
+.rotateCardFace {
   transition: transform 1s ease-out;
   transition-delay: 1s;
   transform: rotateY(0deg);
