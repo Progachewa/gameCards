@@ -1,0 +1,48 @@
+body, html {
+    background-image: url("images/background.jpg");
+    margin: 0;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.overlay {
+    background: rgba(199, 0, 0, 0.4);
+    height: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    text-transform: uppercase;
+    color: rgba(192, 57, 43, 1);
+    text-shadow: 6px 4px 4px rgba(0, 0, 0, 0.5);
+    padding-top: 180px;
+    font-size: 70px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.playAgainButton {
+    margin-top: 100px;
+    margin-left: 430px;
+    width: 550px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 5px 8px 9px rgba(0, 0, 0, 0.43);
+    border-radius: 20px;
+    color: rgba(54, 17, 87, 1);
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 15px;
+    font-weight: 700;
+}
+
+.redirectedLink {
+    text-decoration: none;
+}
